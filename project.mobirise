@@ -1,0 +1,741 @@
+{
+  "settings": {
+    "name": "Site-02-22_1111",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Cormorant Garamond",
+        "display1Size": 4.25,
+        "display2Font": "Cormorant Garamond",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#95f9af"
+      ]
+    },
+    "versionFirst": "4.6.5",
+    "uniqCompNum": 54,
+    "versionPublish": "4.6.5",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#cc2952"
+            },
+            "SPAN": {
+              "color": "#f9f295"
+            },
+            "H1": {
+              "color": "#cc2952"
+            },
+            ".mbr-text, .mbr-section-btn B": {
+              "color": "#7f1933"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/write-550x303.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><span style=\"font-weight: normal;\">\n                    </span><br><br><span style=\"font-weight: normal;\">Poems and Short Stories</span></h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br><b><br></b><b>With Barbara Ross</b><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning\" href=\"https://barbross.github.io/pss/page1\" target=\"_blank\">Author</a> \n                    <a class=\"btn btn-md btn-secondary\" href=\"https://barbross.github.io/pss/page2\" target=\"_blank\">Poems</a> <a class=\"btn btn-md btn-primary\" href=\"https://barbross.github.io/pss/page3\" target=\"_blank\">Short Stories</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qKlfpOaIIb",
+          "_anchor": "header2-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=3BK802pQbkI&loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "qKm4QKvP8Z",
+          "_anchor": "video2-19",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=F6AcbTMyK7Y&loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "qKm5UWwtjt",
+          "_anchor": "video2-1a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ff7f9f\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary-outline\" href=\"http://barbross.github.io/pss/\">Home Page</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKp6slFnka",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-1e"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2018 - Poems and Short Stories - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlkUADW2d",
+          "_anchor": "footer6-3",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": true,
+          "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "meta_descr": "Welcome",
+        "title": "Page 1",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h1": {
+              "color": "#616161"
+            },
+            "h2, h3, p": {
+              "color": "#767676"
+            },
+            ".mbr-section-subtitle": {
+              "font-style": "italic"
+            }
+          },
+          "_name": "header9",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/welcome-533x400.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"></h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"></p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qKlm6HZC4J",
+          "_anchor": "header9-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n<div>I Hope You Enjoy Reading My Poems and Short Stories\n</div><div><br></div><div>I love to write. All day long there are words bouncing around in my head that if I take the time to write them down, poems or short stories are formed.\n</div><div>\n</div><div>I have written some poems for children. Be sure to check out \"Sleigh Ride\",\n</div><div>It was lots of fun writing it.</div><div><br></div><div>\n</div><div>Also I will be adding a couple about the creation, my favorite part of the Bible. The love poems and the sad poems are more so for the adults to read.\n</div><div>\n</div><div>Sometimes I tend to write too many sad ones, but everyone has moments of sadness in their lives.</div><div><br></div><div>\n</div><div>Be sure to check out the site often for new poems or stories..\n</div><div>I have a section set up for poems and another one for shortstories.</div><div>\n</div><div>I am hoping to publish a few of the short stories on Amazon.\n<span style=\"font-size: 1rem;\"></span></div><div>I just published an adult fiction story, 'My Life Changed Forever,' on Amazon.\n</div><div>My book has been released for purchase.\n</div><div><br></div><div>I am also going to add a childrens short story, 'Raining.'\n</div><div>This story has already been published once in an online children's magazine.\n</div><div>\n</div><div>It has been released to me again to publish. If interested, please check out books by, Barbara A Ross.\n</div><div><br></div><div>Thank You for visiting my site.. I hope you enjoy reading my poems and short stories.I really enjoy writing them and sharing them with you.\n</div><div>&nbsp;\n</div><div>If you would like to use one, please place a link back to my site so that others can read some of my other work.\n</div><div>\n</div><div>Also please remember to credit me for the poem. Not take them as your own.\n</div><div>\n</div><div>They are under a copywrite.\n</div><div>\n</div><div>Thank you\n</div><div><b><br></b></div><div><b>Barbara Ross</b></div></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKloZtjowj",
+          "_anchor": "content1-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-figure": {
+              "margin": "0 auto"
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            },
+            "DIV": {
+              "color": "#ff3366"
+            },
+            "B": {
+              "color": "#879a9f"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>        \n        \n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/author-680x313.jpg\" alt=\"Mobirise\" title>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>\n                    About Me</b></div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
+          "_cid": "qKlY8c1bOs",
+          "_anchor": "image2-13",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#b2ccd2\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p>It's is always nice to know a little about the person who is writing the poems, short stories or articles you are reading. So I am going to tell you a bit about me.\n</p><p></p><div>I was born on January 1st, 1955. Yes, I am a New Years Baby. I hear that all the time. Not the first of the year but I think I came a close second.</div><div><br></div><div> \n</div><div>\n</div><div>My parents had tried very hard to get me to come a day or so earlier, but I guess I wanted to have a chance at being number one.\n</div><div>I had a grandmother, Elizabeth J Miller, who was a gifted writer. I sometimes feel she is a part of me as this writing all comes so easy.\n</div><div>&nbsp;\n</div><div>She also wrote many poems and short stories. If I ever get the link to her website my cousin set up in her honor, I will link it to this one.\n</div><div>It's funny how close I feel to my grandmother. She died at a rather young age and I was only 3 years old. She had a very bad type of asthma.</div><div><br></div><div>\n</div><div>\n</div><div>Sometimes I feel as if someone is leading me as I write. Some poems, such as the creation were written without me even realizing the words \n</div><div>were flowing and I was writing them down. I was a senior in high school sitting in my home room class when that happened.</div><div><br></div><div>\n</div><div>\n</div><div>As everyone does, I have grown older. I have 4 children, 2 girls and 2 boys. They are wonderful people and are also grown up now. </div><div><br></div><div>\n</div><div>Only one remains at home for a little while yet. My youngest finished college and is now starting the police academy in hopes of getting \n</div><div>a job with a police force after graduating.</div><div><br></div><div>\n</div><div>\n</div><div>My three other children are working in their careers. My daughters have blessed me with 7 grandchildren at this time with the 8th due October 29th. \n</div><div>There are 5 girls and 2 boys right now. The newest will also be a boy. All grandchildren age between 2 and 7 years.</div><div><br></div><div>\n</div><div>\n</div><div>&nbsp;I babysit the older 5, the two youngest are twins and go to a daycare. They do keep me busy, but I enjoy spending this special time with them all. \n</div><div>They also love my stories.</div><div><br></div><div>\n</div><div>\n</div><div>I live in the United States, in Ohio. I am married and we just celebrated our 38th year of marriage. A great joy is my parents also just celebrated their \n</div><div>62nd year of marriage. They are turning 84 this year.</div><div><br></div><div>\n</div><div>\n</div><div>I have my dog, Roscoe and a stray cat who really lives at our house named, Porter.\n</div><div><br></div><div>I am a Christian. I believe Jesus died for me so that my sins will be forgiven and I can join him in heaven to serve him there some day.\n</div><div>Not in a big hurry though.</div><div><br></div><div>\n</div><div>\n</div><div>I also have two blogs I have written and may write a third that are my own. Then I write articles for 4 other blogs owned by another person. \n</div><div>I enjoy spending time on the internet and have many friends from all over the world.</div><div><br></div><div>\n</div><div>\n</div><div>I do hope you enjoy the site. Someday I may add a way for your to communicate with me and express feelings about what you have read.\n</div><div>Thanks for visiting my site and learning more about me.</div><div><br></div><div>\n</div><div><b>\n</b></div><div><b>Barbara Ross</b></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlZ1ziFMs",
+          "_anchor": "content1-14",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ff7f9f\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary-outline\" href=\"http://barbross.github.io/pss/\">Home Page</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKp77jmq8x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-1f"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2018 - Poems and Short Stories - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlkUADW2d",
+          "_anchor": "footer6-4",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": true,
+          "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "meta_descr": "Poems",
+        "title": "Page 2",
+        "order": 3
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-figure": {
+              "margin": "0 auto"
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            },
+            "I": {
+              "color": "#cc2952"
+            },
+            "B": {
+              "color": "#55b4d4"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>        \n        \n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/writer-550x334.jpg\" alt=\"Mobirise\" title>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\"><i><b>\n                    Poems</b></i></div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
+          "_cid": "qKlrFjoS3W",
+          "_anchor": "image2-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#b2ccd2\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>An Angel</i></b></p><p><b><i>\n</i></b></p><div>\n</div><div>In her chair she fell asleep. Exhausted from the day.</div><div><br></div><div>\n</div><div>Her little form slumped over, no shirt, only blue jeans.</div><div><br></div><div>\n</div><div>\n</div><div>Bare feet covered with red ink, from coloring.</div><div><br></div><div>\n</div><div>When I moved her she fluttered her eyes, so blue.\n</div><div>\n</div><div>She looked at me and smiled.</div><div><br></div><div>\n</div><div>\n</div><div>An Angel</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><i><b>Beauty Sleep</b></i></p><p><i>\n</i></p><div>\n</div><div>Floors creaking footsteps\n</div><div>on the stairs approaching.</div><div><br></div><div>\n</div><div>Door rattles, pictures fall off the walls</div><div><br></div><div>\n</div><div>\n</div><div>Bed starts quivering. Beauty sleep.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlsuYG7e3",
+          "_anchor": "content3-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#95f9af\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><i><b>Bird of Paradise</b></i></p><p><i>\n</i></p><div>\n</div><div>Green,yellow, blue even a orange beauty\n</div><div>A bird torn between love and hate.\n</div><div>Claws that could kill\n</div><div>A beak strong enough to break a broomstick.</div><div><br></div><div>\n</div><div>\n</div><div>Not knowing he was sick.\n</div><div>Jumped from his perch racing across the wood floor\n</div><div><br></div><div>Wings spread blood gushing from his side.\n<span style=\"font-size: 1rem;\">&nbsp;&nbsp;</span></div><div>Not showing any weakness, died that night</div><div><br></div><div>\n</div><div>\n</div><div>Buried the next day.</div><div><br></div><div>\n</div><div>Green, yellow blue, orange and a touch of red.\n</div><div>&nbsp;\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>\n                     Creation</i></b></p><p><b><i>\n                </i></b></p><div>\n</div><div>Silence, Darkness, Stars begin twinkling\n</div><div>Earth emerges Cold\n</div><div>Warmth and light from the sun</div><div><br></div><div>\n</div><div>\n</div><div>Sound, Movement\n</div><div>Grass, trees, flowers sprout\n</div><div>All giving thanks to God</div><div><br></div><div>\n</div><div>\n</div><div>Water, Air, Life, A man, a woman-love\n</div><div>A tree, The tree of God, Forbidden fruit-sin</div><div><br></div><div>\n</div><div>\n</div><div>Six days of labor, Seventh day rest\n</div><div><br></div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKltqtV1ZN",
+          "_anchor": "content3-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#f9f295\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>\n                     Good-bye</i></b></p><p><b><i>\n                </i></b></p><div>\n</div><div>On a table lies a man, for what reason did he die?\n</div><div>\n</div><div>In the hospital for exploratory surgery</div><div><br></div><div>\n</div><div>He was put to sleep A silent death.\n</div><div>His heart was tired It could no longer beat\n</div><div>He died.</div><div><br></div><div>\n</div><div>\n</div><div>They searched for an answer, looking for a cause.\n</div><div>Cancer of the lung , Cancer of the brain.\n</div><div>How had he lived this long?</div><div><br></div><div>\n</div><div>\n</div><div>I never got to say good-bye</div><div><br></div><div>\n</div><div>\n</div><div>In Memory of Raymond E Miller Sr.\n</div><div>&nbsp;\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>He Gave Us Life</i></b></p><p><b><i>\n</i></b></p><div>\n</div><div>From the darkness A glob appeared.\n</div><div>Bringing light from the heavens\n</div><div>Light to the world\n</div><div>\n</div><div>And a dream became real.</div><div><br></div><div>\n</div><div>People, rulers under God.\n</div><div>&nbsp;Keepers of our world.\n</div><div>\n</div><div>Water, oceans of water.\n</div><div>Home for fish, food for man.\n</div><div>Light for man to work by\n</div><div>Darkness for man to rest by.</div><div><br></div><div>\n</div><div>\n</div><div>A Garden fruit provided by God.\n</div><div>A place to live provided wisdom.\n</div><div>Life, Gods gift to man.\n</div><div>\n</div><div>Everything was clean then came sin.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKluM1ZRE4",
+          "_anchor": "content3-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#b2ccd2\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>Sleigh Ride</i></b></p><p><b><i>\n</i></b></p><div>\n</div><div>Elizabeth J went out to play.\n</div><div>In the deep snow she rode her red sleigh.\n</div><div>Down a steep hill pass a goat eating hay.</div><div><br></div><div>\n</div><div>Elizabeth J was going the wrong way!</div><div><br></div><div>\n</div><div>\n</div><div>Faster and faster went Elizabeth J.\n</div><div>Over the crisp snow she rode her red sleigh.\n</div><div>Elizabeth J tried to stop,\n</div><div>\n</div><div>Then she began spinning like a big red top!</div><div><br></div><div>\n</div><div>Around and around spun Elizabeth J.\n</div><div>Around and around on her red sleigh.\n</div><div>\n</div><div>Elizabeth J was getting quite dizzy.\n</div><div>As she lay on her sleigh feeling quite queasy.</div><div><br></div><div>\n</div><div>\n</div><div>Elizabeth J finally stopped.\n</div><div>\n</div><div>She popped off her sleigh like a jack-in-the-box.\n</div><div>In a pile of snow she fell with a thump.\n</div><div>Soft as a pillow she landed on her rump.</div><div><br></div><div>\n</div><div>\n</div><div>Back up the hill went Elizabeth J.\n</div><div>Next time, she will go the right way.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>\n                     Words</i></b></p><p><b><i>\n                </i></b></p><div>\n</div><div>I lost a Good friend today\n</div><div>Someone I've never met but friends we were.</div><div><br></div><div>\n</div><div>Sometimes things just go wrong,\n</div><div>\n</div><div>No intentions meant, feelings are hurt</div><div><br></div><div>\n</div><div>Anger shows words start bouncing.\n</div><div>That's all we had</div><div><br></div><div>\n</div><div>\n</div><div>Words.</div><div><br></div><div>\n</div><div>\n</div><div>That makes it to easy to go separate ways.\n</div><div>But the feelings are still there.\n</div><div>\n</div><div>The memories of moments shared.</div><div><br></div><div>\n</div><div>Even if they were only Words.\n</div><div>\n</div><div>The words meant a lot\n</div><div>I had a friend, I lost a friend</div><div><br></div><div>\n</div><div>\n</div><div>Due to Words\n</div><div>.\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlxx5cuoI",
+          "_anchor": "content3-l",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#95f9af\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>The Message</i></b></p><p><b><i>\n</i></b></p><div>\n</div><div>You appeared in my dream last night.\n</div><div>Even though we've never met.</div><div><br></div><div>\n</div><div>\n</div><div>You've changed, grown older, unkempt.\n</div><div>Only your eyes remain the same.</div><div><br></div><div>\n</div><div>\n</div><div>I believed you to be gone, never to return.\n</div><div>Maybe it didn't happen. There's still hope.</div><div><br></div><div>\n</div><div>\n</div><div>Captured!</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>Life After Death</i></b></p><p><b><i>\n</i></b></p><div>\n</div><div>He came to me to take away my sorrow.\n</div><div>The pain was too much, the loss too great.</div><div><br></div><div>\n</div><div>In his arms he held me quietly rocking me ever so gentle.</div><div><br></div><div>\n</div><div>\n</div><div>The words were few softly spoken\n</div><div>\"It's not so bad\". Then he was gone.</div><div><br></div><div>\n</div><div>\n</div><div>By<b> Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlyvatXIT",
+          "_anchor": "content3-m",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#f9f295\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>\n                     Sentenced</i></b></p><p><b><i>\n                </i></b></p><div>\n</div><div>The drama has started, will it never end?\n</div><div>You told me you loved me\n</div><div>and would love me till the end.</div><div><br></div><div>\n</div><div>\n</div><div>You lashed out found me guilty without a trial.\n</div><div>Condemned me without fault.\n</div><div>If I prove you wrong, where are we?</div><div><br></div><div>\n</div><div>\n</div><div>The words have been said. The hurt will not leave.\n</div><div>I'm not guilty but the sentence has been passed.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>The Game</i></b></p><p>\n</p><div>\n</div><div>Excitement builds as he enters the stadium.\n</div><div>Anticipation of possibilites offered.</div><div><br></div><div>\n</div><div>He bolts onto the field ready for whatever comes his way.\n</div><div>\n</div><div>Waiting anxiously anticipating his chance planning his move.</div><div><br></div><div>\n</div><div>A break away opponents move feverishly towards him.\n</div><div>Swiftly he moves in, legs entwined, each fighting for possession.</div><div><br></div><div>\n</div><div>\n</div><div>Only one walks away, while the other sends the\n</div><div>ball back up the field to win the Game.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlz8hTAeP",
+          "_anchor": "content3-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#b2ccd2\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><br></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlAfFeLWG",
+          "_anchor": "content3-p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#95f9af\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>I Would Have Loved To Have Known You\n</i></b></p><p></p><div></div><div>\nWe never met still my heart grieves\n</div><div>I heard you have gone to heaven It's your time to rest.\n</div><div><br></div><div></div><div>\nMy Dad always spoke of you. Grandpa loved you so\n</div><div>I know you were a wonderful person\n.</div><div><br></div><div>I loved you too.I wish we had met\n</div><div></div><div>\nThe hugs we would have shared. I love to give kisses.\n</div><div>I will blow you one in the air.\n</div><div><br></div><div></div><div>\nI am excited. Grandpa is coming soon\n</div><div>I remember when he was here once before\n</div><div>Now he will make a home.\n</div><div><br></div><div></div><div>\nSomeday when I am older\n</div><div>I would like to visit the places you lived\n</div><div>To meet our family tand make my life complete.\n</div><div><br></div><div></div><div>\nFor now you are in heaven it's a wonderful place I hear.\n</div><div>God is taking care of you and my other friends there.\n</div><div><br></div><div></div><div>\nSomeday we will meet, our hugs we will share\n</div><div>Stories you will tell me, my life will be complete\n.</div><div><br></div><div>I fill this paper with kisses to you I will send.\n</div><div></div><div>\nIn the ashes of this poem they will travel to you in the wind.\n</div><div><br></div><div></div><div>\nLove to Great Grandma from Jasmine and Drake\n</div><div><br></div><div></div><div>\nBy <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>Sleigh Ride</i></b></p><p><b><i>\n</i></b></p><div><b><i>\n</i></b></div><div><i>Elizabeth J went out to play.\n</i></div><div><i>In the deep snow she rode her red sleigh.\n</i></div><div><i>Down a steep hill pass a goat eating hay.</i></div><div><i><br></i></div><div><i>\n</i></div><div><i>Elizabeth J was going the wrong way!\n</i></div><div><i>\n</i></div><div><i>Faster and faster went Elizabeth J.</i></div><div><i>\n</i></div><div><i>Over the crisp snow she rode her red sleigh.</i></div><div><i><br></i></div><div><i>\n</i></div><div><i>Elizabeth J tried to stop,\n</i></div><div><i>Then she began spinning like a big red top!\n</i></div><div><i>\n</i></div><div><i>Around and around spun Elizabeth J.\n</i></div><div><i>Around and around on her red sleigh.</i></div><div><i><br></i></div><div><i>\n</i></div><div><i>Elizabeth J was getting quite dizzy.\n</i></div><div><i>As she lay on her sleigh feeling quite queasy.\n</i></div><div><i>\n</i></div><div><i>Elizabeth J finally stopped.</i></div><div><i><br></i></div><div><i>\n</i></div><div><i>She popped off her sleigh like a jack-in-the-box.\n</i></div><div><i>In a pile of snow she fell with a thump.\n</i></div><div><i>Soft as a pillow she landed on her rump.</i></div><div><i><br></i></div><div><i>\n</i></div><div><i>\n</i></div><div><i>Back up the hill went Elizabeth J.\n</i></div><div><i>Next time, she will go the right way.</i></div><div><i><br></i></div><div><i>\n</i></div><div><i>\n</i></div><div><i>By<b> Barbara Ross</b></i></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlDSpOjG9",
+          "_anchor": "content3-q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#f9f295\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>\n                     Love</i></b></p><p><b><i>\n                </i></b></p><div>\n</div><div>There is only one love that is greater than\n</div><div>the love of a man and a woman\n</div><div>That's the love of God.</div><div><br></div><div>\n</div><div>\n</div><div>We all know we are not without fault.\n</div><div>&nbsp;We say things not meaning how they come out.\n</div><div>&nbsp;We don't always act the way the other thinks we should.</div><div><br></div><div>\n</div><div>\n</div><div>True love between a man and a woman\n</div><div>&nbsp;will surpass all obsticals\n</div><div>&nbsp;Saying sorry isn't even a needed word.</div><div><br></div><div>\n</div><div>\n</div><div>Love is powering, Love is enduring,\n</div><div>True Love is Everlasting.</div><div><br></div><div>\n</div><div>\n</div><div>&nbsp;As is the Love of God.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline><p><b><i>Snow Crazy</i></b></p><p><b><i>\n</i></b></p><div>\n</div><div>It's snowing outside\n</div><div>There's a warm fire burning inside.\n</div><div>Windows shaking from the howling winds.</div><div><br></div><div>\n</div><div>Snowflakes falling,\n</div><div>\n</div><div>I anticipate the chance,\n</div><div>of building igloos\n</div><div>while everyone else builds snowmen.</div><div><br></div><div>\n</div><div>Snow angels guard the entrance\n</div><div>I shovel out the inside.\n</div><div>\n</div><div>It grows warmer with my body heat\n</div><div>igloos really are warm.</div><div><br></div><div>But a warm fire and cocoa are waiting for me inside.\n</div><div>Why am I out here in the cold</div><div><br></div><div>\n</div><div>\n</div><div>Maybe I'm just snow crazy!</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><p></p></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlF1Ukbb3",
+          "_anchor": "content3-r",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#b2ccd2\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12 col-md-8\">\n                <div class=\"col-12 col-md-6 pr-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline>\n                     \n                <div><br></div><div><b><i>I Need You to Love Me</i></b></div><div><b><i><br></i></b></div><div><b><i>\n</i></b></div><div>\n</div><div>Don't know why you allowed that to happen to me.\n</div><div><br></div><div>I would have been good and loved you.\n</div><div>\n</div><div>Made Mothers Days Cards for you.\n</div><div>Brought you flowers. </div><div><br></div><div>Helped daddy work on cars.\n</div><div>\n</div><div>I would have grown up and made you proud.\n</div><div><br></div><div>Never made the choice you made\n</div><div>.\n</div><div>My child would have been your</div><div>grandchild.\n</div><div><br></div><div>The one you'll never have.\n</div><div>\n</div><div>&nbsp;I'll wait for you.\n</div><div>Some day I hope to meet you.\n</div><div><br></div><div>Give you those hugs and kisses that I missed.\n</div><div>\n</div><div>I need you to, hold me and hug me\n</div><div>I need you to love me.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div><div><b><br></b></div><div><b>\n</b></div><div>\n</div><div>A Tribute to the Unborn</div></div>\n                <div class=\"col-12 col-md-6 pl-lg-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline>\n                     \n                <div><br></div><div><b><i>Dragon's Breath</i></b></div><div><b><i><br></i></b></div><div><b><i>\n</i></b></div><div>\n</div><div>As Dragon's breath breathes down my neck,\n</div><div>I read of things to come.</div><div><br></div><div>\n</div><div>\n</div><div>Around me I hear cries of others,\n</div><div>not ready, not knowing, blind.\n</div><div>Unable to understand, blindly following.</div><div><br></div><div>\n</div><div>As Satan takes a lead.\n</div><div>\n</div><div>I continue to read as distractions try to pull me away.\n</div><div>God keeps me strong, God tells me what to say.</div><div><br></div><div>\n</div><div>\n</div><div>Knowledge is Satan's enemy.\n</div><div>\n</div><div>The dragon's breath is growing hotter.\n</div><div>It is burning into my very soul.</div><div><br></div><div>\n</div><div>The dragon takes me to a place. Screams fill the air.\n</div><div>There are demons everywhere. A great stench fills the air.</div><div><br></div><div>\n</div><div>\n</div><div>God is with me, I feel his presence.\n</div><div><br></div><div>\n</div><div>My heart holds no fear. As a great fire engulfs me.\n</div><div>He puts it out with a tear.\n</div><div>God loves us all. Even though we may stray.</div><div><br></div><div>\n</div><div>God will never leave us.</div><div><br></div><div>\n</div><div>\n</div><div>We need to stay strong until the very end.\n</div><div>Help others to understand.by keeping\n</div><div>God in your heart always.</div><div><br></div><div>\n</div><div>\n</div><div>The Sun will grow dark and the moon will shine no more.\n</div><div>Through the darkness there comes a light.</div><div><br></div><div>\n</div><div>Jesus has returned.</div><div><br></div><div>\n</div><div>\n</div><div>With him comes forgiveness for many.\n</div><div>Jesus cries for the souls who never accepted him.\n</div><div>The knowledge they never obtained.</div><div><br></div><div>\n</div><div>\n</div><div>With a broken heart, he binds them with chains.\n</div><div>Into the pit he sends them as many ask for forgiveness.\n</div><div>His numbers are complete. He seals the pit\n</div><div>.\n</div><div>He walks away from the cries.\n</div><div>Maybe, one day, Jesus will listen again.</div><div><br></div><div>\n</div><div>\n</div><div>By <b>Barbara Ross</b></div></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlHgKx40m",
+          "_anchor": "content3-s",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ff7f9f\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary-outline\" href=\"http://barbross.github.io/pss/\">Home Page</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKp7FVz1Gt",
+          "_anchor": "content8-1g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2018 - Poems and Short Stories - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlITsU2Js",
+          "_anchor": "footer6-t",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": true,
+          "_params": {}
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "meta_descr": "Short Stories",
+        "title": "Page 3",
+        "order": 4
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-figure": {
+              "margin": "0 auto"
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            },
+            "DIV": {
+              "color": "#ff3366"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>        \n        \n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/writingpen-674x250.jpg\" alt=\"Mobirise\" title>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\"><b>\n                    Short Stories</b></div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
+          "_cid": "qKlJAa3cEN",
+          "_anchor": "image2-v",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#f9f295\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><i><b>Grace and the Golden Goose</b></i></p><p><i><b>\n</b></i></p><div><b>\n</b></div><div>Old Man Kerr lived deep in the woods in a run down log cabin with his three beautiful daughters: Mary Beth, Jessica and Grace.\n</div><div>Mary Beth, the oldest, never had time to do anything but sit around and brush her hair.\n</div><div>Jessica, the second daughter, was always in a hurry and let nothing get in her way.\n</div><div>Grace, the youngest daughter, was very kind and considerate of others. She was always willing to help someone in need.</div><div><br></div><div>\n</div><div>\n</div><div>One Saturday morning, Old Man Kerr went to Mary Beth, who was sitting at her dressing table brushing her long blond hair and said,\"It is your turn to collect the honey from the bee hives.\"\n</div><div>\"Not today,\" said Mary Beth. \"Jason is coming over later. I must brush my hair until it's silky and smooth.\"\n</div><div>\n</div><div>\"It is your turn and you must go,\" said her father. \"There will be plenty of time for you to get ready for Jason when you get back.\"</div><div><br></div><div>\n</div><div>Mary Beth slammed the brush down on her dressing table and stomped out of the room.\n</div><div>\"You would not make Grace go if she had something else to do even if it was her turn.\"\n</div><div>\n</div><div>Out in the shed, Mary Beth gathered the buckets and netting to get the honey. As she walked down the narrow path towards the hives, an old woman approached her.</div><div><br></div><div>\n</div><div>\"Good morning,\" said the old woman in a scratchy sounding voice. \"Would you be so kind as to help me thread this needle so I can finish sewing this dress? I can not see very good these days.\"\n</div><div>\n</div><div>\"I have far too much to do,\" said Mary Beth walking past the old woman.\n</div><div>\"It is a special dress for a special girl,\" said the old woman.\"It is for the wedding of a princess.\"\n</div><div>\"Let her sew it herself,\" said Mary Beth. \"I simply do not have time.\"</div><div><br></div><div>\n</div><div>\n</div><div>\"You are a foolish girl,\" the old woman screamed frightening Mary Beth as she backed away from the crazy old woman. Not looking where she was going, she backed right into the bee hives. In seconds angry bees were swarming all over Mary Beth and stinging her. She threw down her buckets and netting as she ran for home.</div><div><br></div><div>\n</div><div>\n</div><div>A little later that same day, Old Man Kerr went to his second daughter, Jessica.\n</div><div>\"Jessica,\" he said,\"your sister Mary Beth has been badly stung by bees. She is nursing her stings and will not be able to collect the honey today.\"</div><div><br></div><div>\n</div><div>\n</div><div>\"Now you want me to do it?\" said Jessica. \"I have soccer practice. Why can not Grace do it?\"\n</div><div>\"We need honey,\" said Old Man Kerr.\"Grace ia a bit young to go around a hive of angry bees.\"\n</div><div>\"Fine,\" said Jessica kicking her soccer ball into her closet. \"I will do it, but I must hurry.\"\n</div><div>\"Make sure you put on the protective netting before you get close to the hives,\" said Old Man Kerr.</div><div><br></div><div>\n</div><div>\n</div><div>Jessica hurried along the same path that Mary Beth had taken earlier. She found the buckets and the netting Mary Beth had dropped. Remembering what her father had said, she put the netting on right away. \"Good morning,\" said the old woman to Jessica in her scratchy voice.\n</div><div>\n</div><div>\"Who are you?\" asked Jessica jumping back away from the old woman. \"Where did you come from?\"</div><div><br></div><div>\n</div><div>\"I am an old woman in need of help,\" she said. \"I must finish this dress for the wedding of a princess tomorrow and I can not thread this needle. Could you please thread it for me?\"\n</div><div>\"Get some glasses,\" said Jessica, pushing past the old woman. \"I don't have time for any princess. Let me collect my honey and be on my way.\"\n</div><div>\n</div><div>\"You selfish girl,\" the old woman said laughing. </div><div><br></div><div>As Jessica approached the bee hives, a strong wind blew off her protective netting. The bees grew angry again at another unwanted visitor approaching them. They swarmed around Jessica and started stinging her. She threw down her empty buckets and ran for home.\n</div><div>The old lady laughed as she ran past her still standing in the path with the dress in her hands.</div><div><br></div><div>\n</div><div>\n</div><div>Without honey to take to town to sell, the family would have no dinner that night. Old Man Kerr had no choice but to ask his youngest daughter, Grace.\n</div><div>\"Grace,\" said Old Man Kerr, \"you are so young. I do not like sending you out there with the bees so angry, but your sisters are both now nursing their bee stings. You are the only one left. I would go myself if it weren't for this bad leg.\"\n</div><div>\"That is alright Father,\" said Grace. \"I would not want anything to happen to you. I will be so quiet that the bees will not even know I am there.\"</div><div><br></div><div>\n</div><div>\n</div><div>Grace skipped along the same path her sisters had followed. She picked up the empty buckets and found the netting tangled in a bush nearby. Then she saw an old woman sitting on a log.\n</div><div>She walked up to the old woman who was trying to thread her needle.\n</div><div>\"You are having such a hard time with that,\" said Grace, \" let me help you.\"\n</div><div>\"Thank you so very much,\" the old woman said with tears in her eyes. \"I cannot hardly see what I am doing. My eyes are old and tired.\"\n</div><div>\n</div><div>\"I can thread it for you,\" said Grace, \"and there is not much more to sew on the dress. I will finish it for you.\"</div><div><br></div><div>\n</div><div>Grace sat down on the log next to the old lady and sewed the finishing touches on the dress.\n</div><div>\"This is a beautiful dress,\" said Grace. \"Who is it for?\"\n</div><div>\n</div><div>Grace looked around. The old woman was gone. Grace took the dress and hung it over a nearby tree branch for the old woman to find when she returned. The she went to gather the honey.</div><div><br></div><div>\n</div><div>Next to the hives she found the purest white goose she had ever seen with feathers trimmed in gold.\n</div><div>\"My this is a mysterious day,\" said Grace. \"Where did you ever come from? I must find your owner.\"\n</div><div>\n</div><div>Grace picked up the goose and carried it home along with the honey she had gathered.\n</div><div>Mary Beth was sitting at her dressing table when Grace passed by her door with the goose.\n</div><div>\"Where is the honey?\" said Mary Beth,\"and what is that?\"\n</div><div>\"The honey is on the kitchen table and this is a goose I found by the hives,\" said Grace.</div><div><br></div><div>\n</div><div>\n</div><div>\"Now we will have a delicious dinner,\" said Mary Beth. \"I will have to invite Jason to stay for dinner. Start cleaning that goose right away.\"\n</div><div>\"I am taking this goose to town to find its' rightful owner,\" said Grace walking away.</div><div><br></div><div>\n</div><div>\"You are going to do no such thing,\" said Mary Beth grabbing the goose.\n</div><div>\n</div><div>\"Let go,\" shouted Grace.\n</div><div>\"I cannot let go,\" said Mary Beth. \"I am stuck!\"\n</div><div>\"Stop pulling so hard,\" said Grace.\n</div><div>\"What are you two doing,\" asked Jessica.\n</div><div>\"Just put down your soccer ball and try to pull me off,\" said Mary Beth.\n</div><div>\n</div><div>Jessica grabbed hold of Mary Beth's waist and pulled.\n</div><div>\"Pull harder,\" shouted Mary Beth and Grace together.\n</div><div>\"I....I cannot,\" said Jessica. \"Now I am stuck too.\"\n</div><div>\"What is it with you two,\" said Grace. \"Let go. Now!\"</div><div><br></div><div>\n</div><div>\n</div><div>\"What is all the commotion about,\" asked Old Man Kerr. \"Well, Father,\" said Grace. \"I found this goose and I want to take it to town when we take the honey to find it's owner. Now Mary Beth and Jessica are both saying they are stuck.\"\n</div><div>\n</div><div>\"We are,\" they shouted at the same time.\n</div><div>\"This is quite funny,\" said Father chuckling out loud. \"Hold the goose tight while I pull on Jessica.\"\n</div><div>\"Father,it is not working,\" said Jessica. \"I am still stuck.\"\n</div><div>\"Now so am I,\" said Father. \"What are we going to do?\"\n</div><div>\"We are going to town to find the owner,\" said Grace. \"He will know what to do.\"</div><div><br></div><div>\n</div><div>\n</div><div>Grace started down the path to town to find the owner. Following along behind her was her two sisters and her father.\n</div><div>As they walked along, they met a man and his young son.\n</div><div>\"Look father,\" said the boy, \"they are playing follow the leader. I am going to play with them.\"\n</div><div>\"No!\" his father shouted but it was too late. The boy was already stuck to his dad.</div><div><br></div><div>\n</div><div>\n</div><div>The boy had grabbed onto Old Man Kerrs' back and was stuck. Grace not knowing the boy was stuck also continued onto to town.\n</div><div>\"Come back with my son,\" the boys father shouted as he ran after them. When he caught up with them and tried to pull his son away, he also became stuck.</div><div><br></div><div>\n</div><div>\n</div><div>On went Grace down the path towards town with her sisters, her father, the young boy and the boys father all following along behind her.\n</div><div>As they approached the town, Grace saw it was elaborately decorated for the wedding of the prince which was to take place the very next day.</div><div><br></div><div>\n</div><div>\n</div><div>Grace looked around expecting the people to be happy, but found they looked very sad.\n</div><div>\"Why are you all so sad?\" she asked a baker outside his store. \"Tomorrow is going to be such a wonderful celebration.\"\n</div><div>\"Yes, tomorrow was to be a grand occasion,\" said the baker. \"I have a cake all prepared.</div><div><br></div><div>\n</div><div>\n</div><div>Now the prince is very sad. He has not found the princess he was searching for. She must be loving, honest and willing to put others happiness before her own.\"\n</div><div>\"She would be a very special person then,\" said Grace. \"That is sad and I hope he finds her soon.\"</div><div><br></div><div>\n</div><div>\n</div><div>\"What have you there?\" asks the baker.\n</div><div>\"I am trying to find the owner of this goose. Do you know who it belongs to?\"\n</div><div>\"To the prince,\" said the baker with a smile on his face.\"I think the prince will be very happy to see you have found his golden goose.\"</div><div><br></div><div>\n</div><div>\n</div><div>Grace started up the gold paved path to the palace. As she walked, more and more people joined in the line behind her with her sisters, her father, the young boy and his dad. They were all suddenly laughing and having a good time as they also became stuck to one another.</div><div><br></div><div>\n</div><div>\n</div><div>The prince, hearing the laughter of the towns people, looked out his window. There he saw a line of people a mile long. He walked out to greet them.\n</div><div>\"Welcome,\" said the prince.\n</div><div>Grace bowed to the prince. \"Are you the owner of this beautiful goose?\" she asked the prince.\n</div><div>\"Yes,\" said the prince, \"thank you for returning her to me.\"\n</div><div>\n</div><div>\"Release us,\" chanted the crowd that had joined Grace and the others as they walked through the town.</div><div><br></div><div>\n</div><div>The prince took the goose from Grace. Once he did, Mary Beth, Jessica, Old Man Kerr, the young boy, his father and all the towns people were set free.\n</div><div>\"Now that my family and friends have been set free, I must return home,\" said Grace.\n</div><div>\"Thank you for setting them free.\"</div><div><br></div><div>\n</div><div>\n</div><div>\"You cannot go just yet,\" said the prince. \"My mother, the queen, has something very special to give you.\"\n</div><div>\"I am not seeking a reward for returning the goose,\" said Grace to the queen.\n</div><div>\"Tomorrow,\" said the queen, \"is going to be the most magnificent wedding celebration this town has ever seen. I want you to be a part of it.\"\n</div><div>\n</div><div>\"You are the old woman from the woods,\" said Grace.\"You left before I could return the dress to you.\"</div><div><br></div><div>\n</div><div>\"The dress you finished is the dress you will be wearing tomorrow,\" said the queen.\n</div><div>\"Will you marry me?\" asked the prince and the queen handed Grace the wedding dress.\n</div><div>\"I am not a princess,\" said Grace.\n</div><div>\n</div><div>\"Tomorrow you will be,\" said the prince.</div><div><br></div><div> \" You are loving, honest and put others happiness before your own. You are the one I have been searching for.\"\n</div><div>The prince turned to the crowd and said,\" behold, my new princess if she will have me.\"\n</div><div>\"I will be honored,\" said Grace, \"to be your wife. \"Tomorrow.\"</div><div><br></div><div>\n</div><div>\n</div><div>By<b> Barbara Ross</b></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlK7ii0aL",
+          "_anchor": "content1-w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#b2ccd2\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><b><i>Oinky Needs Milk</i></b></p><p><b><i>\n</i></b></p><div><b>\n</b></div><div>Oinky got a box of cereal.\n</div><div>Next he got a bowl for his cereal.\n</div><div>Then he got his special spoon with a bear on it.</div><div><br></div><div>\n</div><div>Today Oinky wanted to eat cereal with little pink and\n</div><div>white marshmallows in it.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky opened the refrigerator.\n</div><div>Where was the milk?\n</div><div>He looked behind the juice.\n</div><div>He looked behind the big bowl of carrots and beets.\n</div><div>He looked behind the tomatoes.\n</div><div>Oinky did not find milk.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky was sad.\n</div><div>Oinky's stomach growled.\n</div><div>Oinky was hungry.\n</div><div>Oinky needed milk.\n</div><div>\n</div><div>To get milk Oinky needed to walk to the market.\n</div><div>The market always has milk.</div><div><br></div><div>\n</div><div>Oinky put on his coat and hat.\n</div><div>He started walking.\n</div><div>\n</div><div>As he walked, his hooves went clickity click on the road .\n</div><div>As he walked, Oinky's stomach growled.\n</div><div>Oinky walked faster.\n</div><div>Oinky was hungry.</div><div><br></div><div>\n</div><div>At the market Oinky's hooves went clickity click on the hard floor.\n</div><div>\n</div><div>They went clickity click pass the bread.\n</div><div>They went clickity click pass the donuts.\n</div><div>They went clickity click pass the cheese.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky saw the milk cooler.\n</div><div>Oinky was sad.\n</div><div>The milk cooler was empty.\n</div><div>A note on the cooler said the milkman was late.\n</div><div>\n</div><div>Oinky's stomach growled.\n</div><div>Oinky was hungry.\n</div><div>Oinky needed milk.</div><div><br></div><div>\n</div><div>How late would the milkman be?\n</div><div>Oinky looked out window for the milk truck.\n</div><div>\n</div><div>His stomach growled.</div><div><br></div><div>\n</div><div>Oinky saw apples.\n</div><div>He ate an apple.\n</div><div>Apple was good.\n</div><div>Oinky was still hungry.\n</div><div>Where was the milk truck?</div><div><br></div><div>\n</div><div>\n</div><div>Oinky saw cookies.\n</div><div>Oinky ate a cookie.\n</div><div>Cookie was good.\n</div><div>Oinky was still hungry.\n</div><div>He looks out window for milk truck.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky's stomach growled.\n</div><div>He saw crackers.\n</div><div>Oinky ate a cracker.\n</div><div>It was good.\n</div><div>Oinky was still hungry.\n</div><div>Oinky looked out the window for the milk truck.</div><div><br></div><div>\n</div><div>\n</div><div>Milk truck was so late.\n</div><div>He saw mess on floor from cookie and cracker.\n</div><div>He cleaned it up.\n</div><div>Oinky looks out window again.\n</div><div>Milk man and truck are here!</div><div><br></div><div>\n</div><div>\n</div><div>Oinky is happy.\n</div><div>Oinky's stomach growls.\n</div><div>He was still hungry.\n</div><div>Milk man put milk in the cooler.\n</div><div>Oinky got a jug of milk.\n</div><div>He paid for the milk, apple, cookie and cracker.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky started walking home.\n</div><div>Oinky's hooves went clickity click on the road.\n</div><div>He saw a cat.\n</div><div>Cat was hungry.\n</div><div>Oinky put milk in cats bowl.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky started walking again.\n</div><div>His hooves went clickity click on the road.\n</div><div>Oinky saw a dog.\n</div><div>Dog was hungry.\n</div><div>Oinky put milk in dogs bowl.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky started walking again.\n</div><div>He saw a rat.\n</div><div>Rat was hungry.\n</div><div>Oinky gave rat some milk.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky was home at last.\n</div><div>He was tired.\n</div><div>His stomach growled.\n</div><div>Oinky was hungry.\n</div><div>Oinky put milk on his cereal. Oinky ate his cereal.</div><div><br></div><div>\n</div><div>Cereal was good.\n</div><div>\n</div><div>Oinky was still hungy.\n</div><div>Oinky put more cereal in his bowl.\n</div><div>He poured more milk from the jug.\n</div><div>Two drops of milk fell on his cereal.\n</div><div>Milk was gone.</div><div><br></div><div>\n</div><div>\n</div><div>Oinky needs milk.\n</div><div>Oinky's stomach growled.\n</div><div>Oinky was hungry.\n</div><div>Oinky needed to walk back to the market.</div><div><br></div><div>\n</div><div>\n</div><div>By<b> Barbara Ross</b></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlKNzZXSB",
+          "_anchor": "content1-x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ff7f9f\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary-outline\" href=\"http://barbross.github.io/pss/\">Home Page</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKpdkh8ZRQ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-1h"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2018 - Poems and Short Stories - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qKlLQUMxfw",
+          "_anchor": "footer6-y",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": true,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
